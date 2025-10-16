@@ -9,8 +9,11 @@ public class Ejercicio10 {
 		int min;
 		int seg;
 		Scanner reader = new Scanner(System.in);
+		System.out.println("Introduce horas");
 		hora = reader.nextInt();
+		System.out.println("Introduce minutos");
 		min = reader.nextInt();
+		System.out.println("Introduce segundos");
 		seg = reader.nextInt();
 
 		if (seg < 59) {
@@ -18,19 +21,20 @@ public class Ejercicio10 {
 
 		} else {
 			seg = 0;
+			if (min < 59) {
+				min++;
+			} else {
+				min = 0;
+				if (hora < 23) {
+					hora++;
+			}
+			 else {
+				hora = 0;
+				}
+			}
 		}
-		if (min < 59) {
-			min++;
-		} else {
-			min = 0;
-		}
-		if (hora < 23) {
-			hora++;
-		} else {
-			hora = 0;
-		}
-		System.out.println(hora+" horas"+min+" minutos"+" y"+seg+" segundos");
+		System.out.println(hora+" horas "+min+" minutos"+" y "+seg+" segundos");
 		reader.close();
-	}
 
+	}
 }
