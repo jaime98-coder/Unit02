@@ -8,7 +8,7 @@ public class Ejercicio03 {
 		int a=0;
 		int b=0;
 		int c=0;
-		final double X=(-b+-(Math.sqrt(Math.pow(b, 2)-4*a*c))/2*a);
+		double x=(-b+-(Math.sqrt(Math.pow(b, 2)-4*a*c))/2*a);
 		double resultadoEcuacion;
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Introduce valor de a");
@@ -17,7 +17,7 @@ public class Ejercicio03 {
 		b = reader.nextInt();
 		System.out.println("Introduce valor de c");
 		c = reader.nextInt();
-		resultadoEcuacion=a*Math.pow(X, 2)+b*X+c;
+		resultadoEcuacion=a*Math.pow(x, 2)+b*x+c;
 		System.out.println("El valor de la ecuación de segundo grado es"+resultadoEcuacion);
 		reader.close();
 	}
