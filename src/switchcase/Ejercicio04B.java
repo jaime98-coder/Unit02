@@ -3,7 +3,7 @@ package switchcase;
 import java.util.Scanner;
 
 public class Ejercicio04B {
-
+	// EJERCICIO ADICIONAL DE OTRA FORMA
 	public static void main(String[] args) {
 		String tiradaUno;
 		String tiradaDos;

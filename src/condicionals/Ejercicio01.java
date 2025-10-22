@@ -16,14 +16,14 @@ public class Ejercicio01 {
 		int num;
 		// Declaro la variable de tipo booleana para poder realizar un if dentro de
 		boolean esCapicua;
-		
+
 		// Creo el Scanner
 		Scanner reader = new Scanner(System.in);
-		
+
 		// Solicito al usuario y leo de la consola un número para saber si es capicúa
 		System.out.println("Introduce un número para saber si es capicúa");
 		num = reader.nextInt();
-		
+
 		// Creo un IF en primer lugar para determinar el rango en el que debe de estar
 		// para cumplirse los requisitos del ejercicio, y si es erróneo imprimo un
 		// mensaje de error
@@ -64,10 +64,12 @@ public class Ejercicio01 {
 				System.out.println("No es capicua");
 			}
 		} else {
-			
+
 			// Con el else indico por descarte que es capicúa cuando es un número de cuatro
-			// cifras y le asigno a la variable booleana esCapicua cuando la división entre 1000
-			// me indica el número en la primera posición) es igual al módulo de 10 (me indica
+			// cifras y le asigno a la variable booleana esCapicua cuando la división entre
+			// 1000
+			// me indica el número en la primera posición) es igual al módulo de 10 (me
+			// indica
 			// el número en la última posición, ya que es el resto de la división).
 			// Y para calcular los 2 números de en medio utilizo un operador lógico y
 			// realizo el cálculo similar a los casos anteriores pero entre paréntesis para
@@ -80,7 +82,7 @@ public class Ejercicio01 {
 			} else {
 				System.out.println("No es capicua");
 			}
-			
+
 			// Cierro el Scanner
 			reader.close();
 		}
