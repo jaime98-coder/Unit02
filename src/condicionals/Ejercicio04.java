@@ -4,11 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Ejercicio04 {
-	/*
-	 * Entrada: || Resultado esperado: || Resultado obtenido: Entrada: || Resultado
-	 * esperado: || Resultado obtenido: Entrada: || Resultado esperado: || Resultado
-	 * obtenido:
-	 */
+
 	public static void main(String[] args) {
 		// Declaro la variable 'resultadoSumaUsuario' para almacenar la respuesta de la
 		// suma introducida por el usuario.
@@ -51,13 +47,13 @@ public class Ejercicio04 {
 		if (resultadoSumaUsuario == resultadoFinal) {
 			// Imprimo en pantalla que el resultado es correcto, mostrando la respuesta del
 			// usuario.
-			System.out.println("El resultado es correcto." + " - Resultado: " + resultadoSumaUsuario);
+			System.out.println("¡HAS ACERTADO!" + " - Resultado: " + resultadoSumaUsuario);
 		}
 		// Si la respuesta del usuario es diferente, se ejecuta el else.
 		else {
 			// Imprimo en pantalla que el resultado es incorrecto, mostrando el resultado
 			// final correcto.
-			System.out.println("El resultado es incorrecto." + " - Resultado: " + resultadoFinal);
+			System.out.println("¡MEEEEC, INCORRECTO!." + " - Resultado: " + resultadoFinal);
 		}
 
 		// Cierro el Scanner.

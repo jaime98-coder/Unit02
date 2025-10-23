@@ -122,10 +122,10 @@ public class Ejercicio03 {
 		// El case default captura cualquier resto que sea inesperado (aunque el resto
 		// siempre debe estar entre 0 y 22).
 		default -> {
-			System.out.println("Error");
+			System.out.println(numDni + "E");
 		}
 		}
-		;
+		
 
 		// Cierro el Scanner.
 		reader.close();
