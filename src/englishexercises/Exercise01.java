@@ -12,11 +12,14 @@ public class Exercise01 {
 		int option;
 		double totalPrice=375.99;
 		String answer;
+		
 		Scanner reader = new Scanner(System.in);
+		
 		System.out.println("Which screen do you prefer?");
 		System.out.println("1. 38cm -"+SCREEN1_38);
 		System.out.println("2. 43cm -"+SCREEN2_43);
 		option = reader.nextInt();
+		
 		switch (option) {
 		case 1:
 			totalPrice+=SCREEN1_38;
@@ -35,7 +38,8 @@ public class Exercise01 {
 		if (answer.equalsIgnoreCase("Y")) {
 			totalPrice+=PRINTER;
 		}
-		System.out.println(totalPrice);
+		System.out.println("Total Price:"+totalPrice);
+		
 		reader.close();
 		
 	}
