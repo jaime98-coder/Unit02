@@ -14,6 +14,7 @@ public class Exercise03 {
 
 		System.out.println("Introduce the hour that you are seeing in the mirror:");
 		mirrorHour = reader.nextInt();
+		System.out.println("Introduce the minutes that you are seeing in the mirror:");
 		mirrorMinute = reader.nextInt();
 
 		// if hour==12 I change it to 0 to operate later
