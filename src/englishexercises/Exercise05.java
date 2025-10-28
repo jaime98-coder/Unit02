@@ -5,14 +5,27 @@ import java.util.Scanner;
 public class Exercise05 {
 
 	public static void main(String[] args) {
-		double displacement=0;
-		double time=0;
-		double velocity=0;
+		// Declare the variables
+		// Stores the displacement value (initialized to 0)
+		double displacement = 0;
+		// Stores the time value (initialized to 0)
+		double time = 0;
+		// Stores the velocity value (initialized to 0)
+		double velocity = 0;
+		// Stores the first type of data selected by the user (D, T, or V)
 		String dataType1;
+		// Stores the second type of data selected by the user (D, T, or V)
 		String dataType2;
+
+		// Creating the Scanner
 		Scanner reader = new Scanner(System.in);
+
+		// Asking to the user to introduce the first data type
 		System.out.println("Give me one type of data (D, T or V)");
+		// Reading the first data type introduced by the user
 		dataType1 = reader.next();
+
+		// Asking for and reading the value for the first data type
 		switch (dataType1) {
 		case "D" -> {
 			System.out.println("Give the value for that Data");
@@ -31,8 +44,12 @@ public class Exercise05 {
 		}
 		}
 
+		// Asking to the user to introduce the second data type
 		System.out.println("Give me another type of data (D, T or V)");
+		// Reading the second data type introduced by the user
 		dataType2 = reader.next();
+
+		// Asking for and reading the value for the second data type
 		switch (dataType2) {
 		case "D" -> {
 			System.out.println("Give the value for that Data");
@@ -50,16 +67,25 @@ public class Exercise05 {
 			System.out.println("Please insert D,T or V");
 		}
 		}
-		if (velocity==0) {
-			velocity=displacement/time;
-		}else if (displacement==0) {
-			displacement=velocity*time;
-		}else if (time==0) {
-			time=displacement/velocity;
+
+		// Calculating the missing value (the one that is still 0)
+		if (velocity == 0) {
+			// Calculate velocity (V = D / T)
+			velocity = displacement / time;
+		} else if (displacement == 0) {
+			// Calculate displacement (D = V * T)
+			displacement = velocity * time;
+		} else if (time == 0) {
+			// Calculate time (T = D / V)
+			time = displacement / velocity;
 		}
-		System.out.println("Velocity="+velocity);
-		System.out.println("Displacement="+displacement);
-		System.out.println("Time="+time);
+
+		// Printing the final results for all three variables
+		System.out.println("Velocity=" + velocity);
+		System.out.println("Displacement=" + displacement);
+		System.out.println("Time=" + time);
+
+		// Closing the Scanner
 		reader.close();
 	}
 
