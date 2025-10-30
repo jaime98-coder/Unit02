@@ -2,7 +2,7 @@ package whileloops;
 
 import java.util.Scanner;
 
-public class diagram_Ejercicio03 {
+public class DiagramEjercicio03 {
 
 	public static void main(String[] args) {
 		// Declaro la variable 'suma' para acumular el total de los números
