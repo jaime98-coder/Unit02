@@ -6,7 +6,7 @@ public class DiagramEjercicio06 {
 
 	public static void main(String[] args) {
 
-		// --- 1. Definición de Constantes y Variables ---
+		// --- 1. Declaración de Constantes y Variables ---
 		final String PIEDRA = "Piedra";
 		final String PAPEL = "Papel";
 		final String TIJERAS = "Tijeras";
@@ -17,6 +17,7 @@ public class DiagramEjercicio06 {
 		// Para guardar la 'S' de "Seguir jugando"
 		String respuesta;
 
+		// Creo el Scanner
 		Scanner reader = new Scanner(System.in);
 
 		// --- 2. Bucle principal del juego (se ejecuta al menos una vez) ---
@@ -77,11 +78,13 @@ public class DiagramEjercicio06 {
 			System.out.println("¿Quieren jugar otra partida? (Pulsa 'S' para sí, cualquier otra tecla para no)");
 			respuesta = reader.next();
 
-			// El bucle principal se repite solo si la respuesta es "S" (ignorando
-			// mayúsculas)
+			// El bucle principal se repite solo si la respuesta es "S"
 		} while (respuesta.equalsIgnoreCase("S"));
 
+		// Imprimo mensaje final agradeciendo haber jugado
 		System.out.println("¡Gracias por jugar! Fin del programa.");
+		
+		// Cierro el Scanner
 		reader.close();
 	}
 }
