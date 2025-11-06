@@ -83,7 +83,7 @@ public class DiagramEjercicio06 {
 
 		// Imprimo mensaje final agradeciendo haber jugado
 		System.out.println("¡Gracias por jugar! Fin del programa.");
-		
+
 		// Cierro el Scanner
 		reader.close();
 	}
