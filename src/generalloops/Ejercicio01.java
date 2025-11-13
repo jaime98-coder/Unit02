@@ -1,9 +1,18 @@
 package generalloops;
 
+import java.util.Scanner;
+
 public class Ejercicio01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int horas;
+		int minutos;
+		int segundos;
+		int segIncrementar;
+		Scanner reader = new Scanner (System.in);
+		
+		
+		reader.close();
 
 	}
 
