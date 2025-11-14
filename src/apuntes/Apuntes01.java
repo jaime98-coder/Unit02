@@ -1,8 +1,8 @@
-package forloops;
+package apuntes;
 
 import java.util.Scanner;
 
-public class Ejercicio07 {
+public class Apuntes01 {
 
 	public static void main(String[] args) {
 		// Número introducido por el usuario
