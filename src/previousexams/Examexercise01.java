@@ -6,17 +6,17 @@ public class Examexercise01 {
 
 	public static void main(String[] args) {
 		int lado;
-		Scanner reader = new Scanner (System.in);
+		Scanner sc = new Scanner (System.in);
 		System.out.println("Introduce un número de lados");
-		lado =reader.nextInt();
+		lado =sc.nextInt();
 		for (int i = 0; i < lado; i++) {
 			if (i == 0 || i == lado) {
-				}
+				System.out.println("");
 			}
-			System.out.println("");
-
+			
 		}
-		reader.close();
+		
+	sc.close;
 	}
 
 }
