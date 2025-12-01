@@ -10,13 +10,34 @@ public class Examexercise01 {
 		System.out.println("Introduce un número de lados");
 		lado =sc.nextInt();
 		for (int i = 0; i < lado; i++) {
+<<<<<<< HEAD
 			if (i == 0 || i == lado) {
 				System.out.println("");
+=======
+			for (int j=0;j< lado; j++) {
+				if (i==0 || i==lado-1 || j==0 || j==lado-1) {
+					System.out.print("* ");
+				} else {
+					System.out.print("  ");
+				}
+				
+>>>>>>> branch 'master' of https://github.com/jaime98-coder/Unit02.git
+			}
+<<<<<<< HEAD
+			
+=======
+			System.out.println(" ");
 			}
 			
+
+			sc.close();	
+>>>>>>> branch 'master' of https://github.com/jaime98-coder/Unit02.git
 		}
+<<<<<<< HEAD
 		
 	sc.close;
+=======
+>>>>>>> branch 'master' of https://github.com/jaime98-coder/Unit02.git
 	}
 
-}
+

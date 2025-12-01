@@ -7,7 +7,7 @@ public class Ejercicio02 {
 		int num;
 		boolean esPrimo = true;
 		int cuentaPrimos = 0;
-		int divisor = 2;
+		int divisor;
 
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Introduce un número para saber cuantos primos hay entre 1 y este");
